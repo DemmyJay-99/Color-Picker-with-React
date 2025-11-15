@@ -1,16 +1,74 @@
-# React + Vite
+# Color Picker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small React color picker application bootstrapped with Vite.
 
-Currently, two official plugins are available:
+This project is a lightweight UI that lets users choose and preview colors. It's intended as a simple demo / playground for React, Vite, and modern frontend tooling.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Requirements
 
-## React Compiler
+- Node.js 16 or newer
+- npm (or yarn / pnpm)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Install
 
-## Expanding the ESLint configuration
+Open a terminal in the project root and run:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```powershell
+npm install
+```
+
+## Development
+
+Start the dev server with HMR:
+
+```powershell
+npm run dev
+```
+
+Then open http://localhost:5173 (Vite default) in your browser.
+
+## Build & Preview
+
+Create an optimized production build:
+
+```powershell
+npm run build
+```
+
+Preview the production build locally:
+
+```powershell
+npm run preview
+```
+
+## Scripts (from package.json)
+
+- `dev` — starts Vite dev server
+- `build` — builds production assets
+- `preview` — locally previews built assets
+- `lint` — run ESLint (if configured)
+
+## Project structure
+
+Key files and folders:
+
+- `index.html` — app entry HTML
+- `src/` — source files
+	- `main.jsx` — app bootstrap
+	- `App.jsx` — main app component
+	- `ColorPicker.jsx` — primary color picker UI
+	- `index.css` / `App.css` — styles
+	- `assets/` — images and static assets
+- `public/` — static files served as-is
+- `vite.config.js` — Vite configuration
+- `package.json` — scripts and dependencies
+
+## Troubleshooting
+
+- If the dev server doesn't start, ensure Node.js is v16+ and run `npm install` again.
+
+## Contributing
+
+1. Fork the repo (or work in your local copy)
+2. Create a branch for your change
+3. Run and test changes locally with `npm run dev`
