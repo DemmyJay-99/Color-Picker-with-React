@@ -72,3 +72,4 @@ Key files and folders:
 1. Fork the repo (or work in your local copy)
 2. Create a branch for your change
 3. Run and test changes locally with `npm run dev`
+4. Open a pull request describing your changes
